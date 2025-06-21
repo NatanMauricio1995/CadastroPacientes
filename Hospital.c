@@ -6,7 +6,7 @@
 
 typedef struct
 {
-    int codigo;
+    char codigo[15];
     char nome[MAX];
     int idade;
     char sexo;
@@ -35,7 +35,18 @@ int menu()
 
     return resposta;
 }
-int void()
+
+void Inserir_Paciente(TPaciente *x)
+{
+    printf("CPF do paciente (somente numeros e sem espaços):")
+    scanf(" %")
+    printf("Nome do paciente:")
+    scanf(" %[^\n]", (*x).TPacientes.nome);
+
+
+}
+
+int main()
 {
     TPacientes paciente;
     int escolha;
@@ -43,6 +54,21 @@ int void()
     do
     {
         escolha = menu();
+
+        switch(escolha)
+        {
+            case 1:
+                break;
+            case 2:
+                break;            
+            case 3:
+                break;            
+            case 4:
+                break;
+            case 5:
+                break;
+        }
+
     } while (escolha != 5);
     
     return 0;
